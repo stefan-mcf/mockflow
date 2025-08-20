@@ -40,5 +40,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Development setup and contribution guidelines
 - Integration examples and performance testing
 
-[Unreleased]: https://github.com/stefan-mcf/conflux-ml-engine/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/stefan-mcf/conflux-ml-engine/releases/tag/v0.1.0
+[Unreleased]: https://github.com/stefan-mcf/mockflow/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/stefan-mcf/mockflow/releases/tag/v0.1.0
