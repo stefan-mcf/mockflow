@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mockflow"
-version = "0.1.0"
+version = "0.1.1"
 description = "Professional-grade financial time series mock data generation"
 readme = "README.md"
 license = {text = "MIT"}

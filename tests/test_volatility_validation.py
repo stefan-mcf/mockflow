@@ -167,7 +167,7 @@ class TestVolatilityValidation:
                 # High volatility periods should have somewhat higher volume
                 assert volume_ratio >= 0.5, f"High volatility should have reasonable volume: {volume_ratio:.3f}"
 
-    @pytest.mark.parametrize("timeframe", ["15m", "1h", "4h", "1d"])
+    @pytest.mark.parametrize("timeframe", ["1m", "5m", "15m", "1h", "4h", "1d"])
     def test_volatility_scaling_across_timeframes(self, timeframe, test_seed):
         """Test that volatility scales appropriately across timeframes"""
         np.random.seed(test_seed)

@@ -58,7 +58,7 @@ def generate_mock_data(
 
 - **`symbol`** (str): Trading pair symbol (e.g., "BTCUSDT", "ETHUSD")
 - **`timeframe`** (str): Candle timeframe. Supported values:
-  - `"15m"`, `"30m"`, `"1h"`, `"2h"`, `"4h"`, `"6h"`, `"8h"`, `"12h"`, `"1d"`, `"3d"`, `"1w"`
+  - `"1m"`, `"5m"`, `"15m"`, `"30m"`, `"1h"`, `"2h"`, `"4h"`, `"6h"`, `"8h"`, `"12h"`, `"1d"`, `"3d"`, `"1w"`
 - **`days`** (int, optional): Number of days to generate. Alternative to date range.
 - **`start_date`** (datetime, optional): Start date for generation. Used with `end_date`.
 - **`end_date`** (datetime, optional): End date for generation. Used with `start_date`.

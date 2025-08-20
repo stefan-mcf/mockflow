@@ -95,7 +95,7 @@ class TestCoreFunctionality:
         assert (data['volume'] >= 0).all()
         assert not data.isna().any().any()
 
-    @pytest.mark.parametrize("timeframe", ["15m", "30m", "1h", "2h", "4h", "12h", "1d"])
+    @pytest.mark.parametrize("timeframe", ["1m", "5m", "15m", "30m", "1h", "2h", "4h", "6h", "8h", "12h", "1d", "3d", "1w"])
     def test_all_timeframes(self, timeframe):
         """Test that all supported timeframes work"""
         data = generate_mock_data(

@@ -46,7 +46,7 @@ def generate_mock_data(
 
     Args:
         symbol: Trading symbol (e.g., BTCUSDT)
-        timeframe: Timeframe for candles (15m, 30m, 1h, 2h, 4h, 12h, 1d,
+        timeframe: Timeframe for candles (1m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d,
             3d, 1w)
         limit: Number of candles to generate
                (None for auto based on days/date range)

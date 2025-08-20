@@ -77,11 +77,15 @@ def generate_timestamps(
 def get_timeframe_minutes(timeframe: str) -> int:
     """Get the number of minutes for a given timeframe string"""
     timeframe_map = {
+        "1m": 1,
+        "5m": 5,
         "15m": 15,
         "30m": 30,
         "1h": 60,
         "2h": 120,
         "4h": 240,
+        "6h": 360,
+        "8h": 480,
         "12h": 720,
         "1d": 1440,
         "3d": 4320,
@@ -114,14 +118,14 @@ def validate_and_clip_prices(prices: np.ndarray) -> np.ndarray:
 
 def apply_performance_caps(periods: int, timeframe_mins: int, limit: Optional[int] = None) -> int:
     """Apply performance caps to prevent excessive generation"""
-    # Handle limit parameter logic
-    if limit is not None and limit > 0 and limit < periods:
-        periods = limit
+    # If limit is explicitly provided, always respect it
+    if limit is not None and limit > 0:
+        return limit
 
     # For very short timeframes, apply a sensible default cap
-    if limit is None and timeframe_mins < 60 and periods > 2000:
+    if timeframe_mins < 60 and periods > 2000:
         periods = 2000
-    elif limit is None and periods > 10000:  # Global safety cap
+    elif periods > 10000:  # Global safety cap
         periods = 10000
 
     return periods

@@ -11,7 +11,7 @@ Main Components:
 - Utility functions for timestamp generation and validation
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Conflux ML Engine Team"
 
 # Import main public API

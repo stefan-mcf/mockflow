@@ -7,10 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2024-08-20
+
 ### Added
-- Initial PyPI publishing infrastructure
-- Comprehensive CI/CD pipeline with GitHub Actions
-- Enhanced documentation and examples
+- Support for 1-minute (1m) and 5-minute (5m) timeframes
+- Support for 6-hour (6h) and 8-hour (8h) timeframes
+
+### Fixed
+- Performance caps now properly respect explicit limit parameter
+- Documentation inconsistencies between supported and implemented timeframes
+- Test coverage for all supported timeframes
+
+### Technical
+- Updated timeframe validation in core module
+- Enhanced test parametrization for comprehensive coverage
+- Improved performance cap logic for user-specified limits
 
 ## [0.1.0] - 2024-08-20
 
@@ -40,5 +51,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Development setup and contribution guidelines
 - Integration examples and performance testing
 
-[Unreleased]: https://github.com/stefan-mcf/mockflow/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/stefan-mcf/mockflow/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/stefan-mcf/mockflow/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/stefan-mcf/mockflow/releases/tag/v0.1.0

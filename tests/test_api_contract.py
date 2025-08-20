@@ -107,7 +107,7 @@ class TestAPIContract:
             assert col in data.columns
             assert not data[col].isna().any()
 
-    @pytest.mark.parametrize("timeframe", ["15m", "30m", "1h", "2h", "4h", "12h", "1d"])
+    @pytest.mark.parametrize("timeframe", ["1m", "5m", "15m", "30m", "1h", "2h", "4h", "6h", "8h", "12h", "1d", "3d", "1w"])
     def test_timeframe_support_contract(self, timeframe):
         """Test that all standard timeframes are supported"""
         data = generate_mock_data(
